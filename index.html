@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Amazon.com (Clone)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <!-- this is navbar1 -->
+<div class="navbar">
+
+    <!-- this is box1 -->
+    <div class="box1">
+        <!-- this is amazonlogo box -->
+        <div class="amazonlogobox">
+            <img src="amazonlogo.png" alt="amazonlogo" id="amazonlogo">
+        </div>
+    </div>
+
+        <!-- this is box2 -->
+        <div class="box2">
+            <!-- this is sub-box2 -->
+            <div class="sub-box2">
+                <!--this is locationbox-->
+                <div class="locationlogobox">
+                    <i class="fa-solid fa-location-dot" id="locationlogo"></i>
+                </div>
+
+                <!--this is deliver to india-->
+                <div class="locationtextbox">
+                    <a style="text-decoration: none; margin-top: 13px; margin-left: 2px; color: #cccccc; font-size: 0.7rem; display: inline-block;">Deliver to</a>
+                    <a style="text-decoration: none; margin-left: 2px; color: white; font-size: 0.9rem; display: inline-block; font-weight: bold;">India</a>
+                </div>
+            </div>
+        </div>
+            
+    <!-- this is box3 -->
+    <div class="box3">
+        <!-- this is sub-box3 -->
+        <div class="sub-box3">
+            <!-- this is dropdownlist box -->
+            <div class="listbox">
+                        <select id="menulist">
+                            <option value="All Departments"> All</option>
+                <option value="Arts & Crafts">Arts & Crafts</option>
+                <option value="Automotive">Automotive</option>
+                <option value="Baby">Baby</option>
+                <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                <option value="Books">Books</option>
+                <option value="Boy's Fashion">Boy's Fashion</option>
+                <option value="Deals">Deals</option>
+                <option value="Digital Music">Digital Music</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Girl's Fashion">Girl's Fashion</option>
+                <option value="Health & household"> Health & household</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Insustrial & Scientific">Insustrial & Scientific</option>
+                <option value="Kindle Store">Kindle Store</option>
+                <option value="Lugguage">Lugguage</option>
+                <option value="Men's Fashion">Men's Fashion</option>
+                <option value="Movies & TV">Movies & TV</option>
+                <option value="Music, CDs & Vinyl">Music, CDs & Vinyl</option>
+                <option value="Pet Supplies">Pet Supplies</option>
+                <option value="Prime Video">Prime Video</option>
+                <option value="Software">Software</option>
+                <option value="Sports & Outdoors">Sports & Outdoors</option>
+                <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                <option value="Toys & Games">Toys & Games</option>
+                <option value="Video Games">Video Games</option>
+                <option value="Women's Fashion">Women's Fashion</option>
+                        </select>
+            </div>
+            <!-- this is searchbar box -->
+            <div class="searchbarbox">
+                    <input type="search" placeholder="  Search Amazon" class="searchbar" >
+            </div>
+            <!-- this is searchicon box -->
+            <div class="searchicon">
+                    <i class="fa-solid fa-magnifying-glass" id="magnifyglass"></i>
+            </div>      
+        </div>
+    </div>
+
+    <!-- this is box4 -->
+    <div class="box4">
+        <!-- this is langlist box -->
+        <div class="langlistbox">
+             <img src="usflag.png" alt="US-Flag" height="13px"; width="20px";>
+             <a class="ENword" style="font-weight: bolder; margin-left: 2px; font-size: 14px;">EN</a>
+            <select class="langlist">
+                <option></option>
+            </select>
+        </div>
+    </div>
+
+    <!-- this is box5 -->
+    <div class="box5">
+        <!-- this is hello sign in box -->
+        <div class="hellosigninbox">
+            <a class="hellosignin">Hello,sign in</a>
+        </div>
+        <!-- this is account and lists box -->
+        <div class="accountandlistsbox">
+            <a class="accountandlists">Account & Lists</a>
+            <select class="accountandlistsdropdown">
+                <option></option>
+            </select>
+        </div>
+    </div>
+
+    <!-- this is box6 -->
+    <div class="box6">
+        <!-- this is returns box -->
+        <div class="returnsbox">
+            <a class="returns">Returns</a>
+        </div>
+        <!-- this is and orders box -->
+        <div class="andordersbox">
+            <a class="andorders">& Orders</a>
+        </div>
+    </div>
+
+    <!-- this is box7 -->
+    <div class="box7">
+        <!-- this is cart icon box -->
+        <div class="carticonbox">
+            <i class="fa-solid fa-cart-shopping" style=" font-size: 26px;"></i>
+        </div>
+        <!-- this is cart word box -->
+        <div class="cartwordbox">
+            <a class="cartword">Cart</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- this is navbar2 -->
+<div class="navbar2">
+
+    <!--this is box8-->
+    <div class="box8">
+        <!--this is menuicon box-->
+        <div class="menuiconbox">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <!--this is all word box-->
+        <div class="allwordbox">
+            <a>All</a>
+        </div>
+    </div>
+
+    <!--this is box9-->
+    <div class="box9">
+         <a style="font-size: 0.9rem;">Today's Deals</a>
+    </div>
+
+    <!--this is box10-->
+    <div class="box10">
+        <a style="font-size: 0.9rem;">Customer Service</a>
+   </div>
+
+    <!--this is box11-->
+    <div class="box11">
+        <a style="font-size: 0.9rem;">Registry</a>
+   </div>
+
+    <!--this is box12-->
+    <div class="box12">
+        <a style="font-size: 0.9rem;">Giftcards</a>
+   </div>
+
+    <!--this is box13-->
+    <div class="box13">
+        <a style="font-size: 0.9rem;">Sell</a>
+   </div>
+</div>
+
+    </header>
+
+    <main>
+
+    <div class="content">
+
+        <div class="sub-content">
+
+                <!--this is simple text note.-->
+            <div class="note">
+                    <pre style="color: #0f1111;">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. </pre>
+                    <a href="https://amazon.in" style="color: #007581;"> Click here to go amazon.in</a>
+            </div>
+
+                <!--this is item's box-->
+            <div class="itemsbox">
+                <!--this is sub box 1 of main item box-->
+                <div class="subbox1-itembox">
+                    <!--this item 1-->
+                    <div class="item1">
+                        <h2 id="gamingaccessories">Gaming Accessories</h2>
+                        <div class="subbox1-item1">
+                            <img src="headsets.jpg" height="115px"; width="147px";>
+                            <img src="keyboard.jpg" height="115px"; width="147px";>
+                        </div>
+                        <div class="item12names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Headsets</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Keyboards</a>
+                        </div>
+                        <div class="subbox2-item1">
+                            <img src="mouse.jpg" height="115px"; width="147px";>
+                            <img src="chair.jpg" height="115px"; width="147px";>
+                        </div>                        
+                        <div class="item34names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Mouse</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Chairs</a>
+                        </div>
+                        <div class="seemore">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See more...</a>
+                        </div>
+                    </div>
+
+                    <!--this is item2-->                            
+                    <div class="item2">                           
+                        <h2 id="pcdeals">Deals in PCs</h2>
+                        <div class="subbox1-item2">
+                            <img src="pc.jpg" height="300px"; width="310px";>
+                        </div>
+                        <div class="buypc">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Shop Now</a>
+                        </div>                            
+                    </div>
+                    
+                    <!--this is item box no.3-->
+                    <div class="item3">
+                        <h2 id="refreshyourspace">Refresh Your Space</h2>
+                        <div class="subbox1-item3">
+                            <img src="dining.jpg" height="115px"; width="147px";>
+                            <img src="home.jpg" height="115px"; width="147px";>
+                        </div>
+                        <div class="item56names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Dining</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Home</a>
+                        </div>
+                        <div class="subbox2-item1">
+                            <img src="kitchen.jpg" height="115px"; width="147px";>
+                            <img src="healthandbeauty.jpg" height="115px"; width="147px";>
+                        </div>                        
+                        <div class="item78names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Kitchen</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Health and Beauty</a>
+                        </div>
+                        <div class="seemore2">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See more...</a>
+                        </div>
+                    </div>
+
+                    <!--this is item box no.4-->
+                    <div class="item4">
+                        <h2 id="amazongadgetstore">Amazon Gadget Store</h2>
+                        <div class="subbox1-item4">
+                            <img src="smartphone.jpg" height="115px"; width="147px";>
+                            <img src="tablets.jpg" height="115px"; width="147px";>
+                        </div>
+                        <div class="item910names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Smartphones</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Tablets</a>
+                        </div>
+                        <div class="subbox2-item4">
+                            <img src="laptops.jpg" height="115px"; width="147px";>
+                            <img src="tv.jpg" height="115px"; width="147px";>
+                        </div>                        
+                        <div class="item1112names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Laptops</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">TVs</a>
+                        </div>
+                        <div class="seemore3">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See more from Amazon gadgets</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--this is sub box 2 of main item box-->
+                <div class="subbox2-itembox">
+                    <!--this item 5-->
+                    <div class="item5">
+                        <h2 id="shopdealsinfashion">Shop deals in Fashion</h2>
+                        <div class="subbox1-item5">
+                            <img src="jeans.jpg" height="115px"; width="147px";>
+                            <img src="tops.jpg" height="115px"; width="147px";>
+                        </div>
+                        <div class="item1314names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Jeans under $50</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Tops Under $25</a>
+                        </div>
+                        <div class="subbox2-item5">
+                            <img src="dresses.jpg" height="115px"; width="147px";>
+                            <img src="shoes.jpg" height="115px"; width="147px";>
+                        </div>                        
+                        <div class="item1516names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Dress under $30</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Shoes under $50</a>
+                        </div>
+                        <div class="seealldeals">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See all deals</a>
+                        </div>
+                    </div>
+
+                    <!--this is item6-->                            
+                    <div class="item6">                           
+                        <h2 id="topdeals">Top deals</h2>
+                        <div class="subbox1-item6">
+                            <img src="topdeal.jpg" height="300px"; width="310px";>
+                        </div>
+                        <div class="seealldeals2">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See all deals</a>
+                        </div>                            
+                    </div>
+                    
+                    <!--this is item box no.7-->
+                    <div class="item7">
+                        <h2 id="fashiontrendsyoulike">Fashion trends you like</h2>
+                        <div class="subbox1-item7">
+                            <img src="dresses2.jpg" height="115px"; width="147px";>
+                            <img src="knits.jpg" height="115px"; width="147px";>
+                        </div>
+                        <div class="item1718names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Dresses</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Knits</a>
+                        </div>
+                        <div class="subbox2-item7">
+                            <img src="jackets.jpg" height="115px"; width="147px";>
+                            <img src="jewelry.jpg" height="115px"; width="147px";>
+                        </div>                        
+                        <div class="item1920names">
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Jackets</a>
+                            <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Jewelry</a>
+                        </div>
+                        <div class="exploremore">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Explore more...</a>
+                        </div>
+                    </div>
+
+                     <!--this is item8-->                            
+                    <div class="item8">                           
+                        <h2 id="homedecorin50">Home decor in $50</h2>
+                        <div class="subbox1-item8">
+                            <img src="homedecor.jpg" height="300px"; width="310px";>
+                        </div>
+                        <div class="shopnow2">
+                            <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Shop Now</a>
+                        </div>                            
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+            <div class="sub-content2">
+                <h2 style="padding-top: 20px; margin-left: 20px;"> Best Sellers in Sports & Outdoors</h2>
+
+                <div class="sportsitems">
+                    <img src="dumbell.jpg" style="height: 180px;">
+                    <img src="batch.jpg" style="height: 180px;">
+                    <img src="mat.jpg" style="height: 180px;">
+                    <img src="shaker.jpg" style="height: 180px;">
+                    <img src="socks.jpg" style="height: 180px;">
+                </div>
+            </div>
+
+            <div class="sub-content3">
+                <h2 style="padding-top: 20px; margin-left: 20px;"> Best Sellers in Beauty & Personal Care</h2>
+
+                <div class="beautyitems">
+                    <img src="oil.jpg" style="height: 180px;">
+                    <img src="tissue.jpg" style="height: 180px;">
+                    <img src="facewash.jpg" style="height: 180px;">
+                    <img src="makeup.jpg" style="height: 180px;">
+                    <img src="cotton.jpg" style="height: 180px;">
+                </div>
+            </div>
+
+            <!--this is sub box 2 of main item box-->
+            <div class="sub-content4">
+            
+                                <!--this is item6-->                            
+                                <div class="item2">                           
+                                    <h2 id="topdeals">Trackers, Smartwatches</h2>
+                                    <div class="subbox1-item6">
+                                        <img src="watch.jpg" height="300px"; width="310px";>
+                                    </div>
+                                    <div class="seealldeals2">
+                                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Shop now</a>
+                                    </div>                            
+                                </div>
+                                
+                                <!--this is item box no.7-->
+                                <div class="item1">
+                                    <h2 id="fashiontrendsyoulike">Gaming Merchandise</h2>
+                                    <div class="subbox1-item1">
+                                        <img src="apparel.jpg" height="115px"; width="147px";>
+                                        <img src="hats.jpg" height="115px"; width="147px";>
+                                    </div>
+                                    <div class="item1718names">
+                                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Apparel</a>
+                                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Hats</a>
+                                    </div>
+                                    <div class="subbox2-item7">
+                                        <img src="actionfig.jpg" height="115px"; width="147px";>
+                                        <img src="mugs.jpg" height="115px"; width="147px";>
+                                    </div>                        
+                                    <div class="item1920names">
+                                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Action figures</a>
+                                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Mugs</a>
+                                    </div>
+                                    <div class="exploremore">
+                                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See more...</a>
+                                    </div>
+                                </div>
+            
+                                 <!--this is item8-->                            
+                                <div class="item2">                           
+                                    <h2 id="homedecorin50">Player's Paradise</h2>
+                                    <div class="subbox1-item2">
+                                        <img src="videogame.jpg" height="300px"; width="310px";>
+                                    </div>
+                                    <div class="shopnow2">
+                                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Shop video games</a>
+                                    </div>                            
+                                </div>
+
+                                <!--this is item8-->                            
+                                <div class="item2">                           
+                                    <h2 id="homedecorin50">A whole new way to work</h2>
+                                    <div class="subbox1-item2">
+                                        <img src="computer.jpg" height="300px"; width="310px";>
+                                    </div>
+                                    <div class="shopnow2">
+                                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Sho new computers</a>
+                                    </div>                            
+                                </div>
+            
+            </div>
+
+            <div class="sub-content5">
+                <h2 style="padding-top: 20px; margin-left: 20px;"> Most wished for in Video Games</h2>
+
+                <div class="sportsitems">
+                    <img src="v1.jpg" style="height: 180px;">
+                    <img src="v2.jpg" style="height: 180px;">
+                    <img src="v3.jpg" style="height: 180px;">
+                    <img src="v4.jpg" style="height: 180px;">
+                    <img src="v5.jpg" style="height: 180px;">
+                    <img src="v6.jpg" style="height: 180px;">
+                    <img src="v7.jpg" style="height: 180px;">
+                    <img src="v8.jpg" style="height: 180px;">
+                </div>
+            </div>
+
+            <!--this is sub box 2 of main item box-->
+            <div class="sub-content4">
+            
+                <!--this is item6-->                            
+                <div class="item2">                           
+                    <h2 id="topdeals">Laptops for every need</h2>
+                    <div class="subbox1-item6">
+                        <img src="laptops2.jpg" height="300px"; width="310px";>
+                    </div>
+                    <div class="seealldeals2">
+                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Find your laptop here</a>
+                    </div>                            
+                </div>
+                
+                <!--this is item box no.7-->
+                <div class="item1">
+                    <h2 id="fashiontrendsyoulike">Warm & welcoming decor</h2>
+                    <div class="subbox1-item1">
+                        <img src="garlands.jpg" height="115px"; width="147px";>
+                        <img src="outdoor.jpg" height="115px"; width="147px";>
+                    </div>
+                    <div class="item1718names">
+                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Wreath & gardlands</a>
+                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Outdoor decor</a>
+                    </div>
+                    <div class="subbox2-item7">
+                        <img src="pillow.jpg" height="115px"; width="147px";>
+                        <img src="wallart.jpg" height="115px"; width="147px";>
+                    </div>                        
+                    <div class="item1920names">
+                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Pillow & throws</a>
+                        <a href="#" style="text-decoration: none; color: #0f1111; font-size: 0.8rem;">Wall arts & mirrors</a>
+                    </div>
+                    <div class="exploremore">
+                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">Shop more fall finds</a>
+                    </div>
+                </div>
+
+                 <!--this is item8-->                            
+                <div class="item2">                           
+                    <h2 id="homedecorin50">Create Business Solutions</h2>
+                    <div class="subbox1-item2">
+                        <img src="softwarepro.jpg" height="300px"; width="310px";>
+                    </div>
+                    <div class="shopnow2">
+                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See more Software Products</a>
+                    </div>                            
+                </div>
+
+                <!--this is item8-->                            
+                <div class="item2">                           
+                    <h2 id="homedecorin50">Personal Care under $25</h2>
+                    <div class="subbox1-item2">
+                        <img src="brush.jpg" height="300px"; width="310px";>
+                    </div>
+                    <div class="shopnow2">
+                        <a href="#" style="text-decoration: none; color: #007581; font-size: 0.85rem;">See more...</a>
+                    </div>                            
+                </div>
+
+            </div>
+
+            <div class="sub-content5">
+                <h2 style="padding-top: 20px; margin-left: 20px;"> Best Sellers in Books</h2>
+
+                <div class="sportsitems">
+                    <img src="b1.jpg" style="height: 180px;">
+                    <img src="b2.jpg" style="height: 180px;">
+                    <img src="b3.jpg" style="height: 180px;">
+                    <img src="b4.jpg" style="height: 180px;">
+                    <img src="b5.jpg" style="height: 180px;">
+                    <img src="b6.jpg" style="height: 180px;">
+                    <img src="b7.jpg" style="height: 180px;">
+                </div>
+            </div>
+
+            <div class="sub-content5">
+                <h2 style="padding-top: 20px; margin-left: 20px;"> Best Sellers in Kitchen & Dining</h2>
+
+                <div class="sportsitems">
+                    <img src="k1.jpg" style="height: 180px;">
+                    <img src="k2.jpg" style="height: 180px;">
+                    <img src="k3.jpg" style="height: 180px;">
+                    <img src="k4.jpg" style="height: 180px;">
+                    <img src="k5.jpg" style="height: 180px;">
+                    <img src="k6.jpg" style="height: 180px;">
+                </div>
+            </div>
+
+            <div class="sub-content5">
+                <h2 style="padding-top: 20px; margin-left: 20px;"> Most wished for in Movies & TV
+                </h2>
+
+                <div class="sportsitems">
+                    <img src="m1.jpg" style="height: 180px;">
+                    <img src="m2.jpg" style="height: 180px;">
+                    <img src="m3.jpg" style="height: 180px;">
+                    <img src="m4.jpg" style="height: 180px;">
+                    <img src="m5.jpg" style="height: 180px;">
+                    <img src="m6.jpg" style="height: 180px;">
+                    <img src="m7.jpg" style="height: 180px;">
+                </div>
+            </div>
+
+            <div class="lastbox">
+                <div class="insidelast">
+                    <p style="font-size: 0.8rem;">See personalized recommendations </p>
+                    <button>Sign in</button>
+                    <p style="font-size: 0.7rem;" >New customer? <a style="text-decoration: none; color: #007581;">Start here.</a></p>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+
+        <div class="backtotop">
+            <a style="color: white; text-decoration: none; font-size: 0.8rem;">Back to top</a>
+        </div>
+
+        <div class="foot-details">
+            <div class="details1">
+                
+                <p>Get to Know Us</p>
+                    <a>Careers</a>
+                    <a>Blog</a>
+                    <a>About Amazon</a>
+                    <a>Investor Relations</a>
+                    <a>Amazon Devices</a>
+                    <a>Amazon Science</a>
+            
+            </div>
+
+            <div class="details2">
+                
+                <p>Make Money with Us</p>
+                    <a>Sell products on Amazon</a>
+                    <a>Sell on Amazon Business</a>
+                    <a>Sell apps on Amazon</a>
+                    <a>Become an Affiliate</a>
+                    <a>Advertise Your Products</a>
+                    <a>Self-Publish with Us</a>
+                    <a>Host an Amazon Hub</a>
+            
+            </div>
+
+            <div class="details3">
+                
+                <p>Amazon Payment Products</p>
+                    <a>Amazon Business Card</a>
+                    <a>Shop with Points</a>
+                    <a>Reload Your Balance</a>
+                    <a>Amazon Currency Converter</a>
+            
+            </div>
+
+            <div class="details4">
+                
+                <p>Let Us Help You</p>
+                    <a>Amazon and COVID-19</a>
+                    <a>Your Account</a>
+                    <a>Your Orders</a>
+                    <a>Shipping Rates & Poilicies</a>
+                    <a>Returns & Replacements</a>
+                    <a>Manage Your Content and Devices</a>
+            
+            </div>
+
+
+        </div>
+
+        <div class="lastfooter">
+            <img src="amazonlogo.png" style="height: 23px; margin-top: 10px; margin-right: 60px;">
+
+            <div class="iconen">
+                <i class="fa-solid fa-globe" style="font-size: 15px; padding-left: 10px; padding-right: 10px;"></i>
+                <p>English</p>
+            </div>
+
+            <div class="iconen2">
+                <i class="fa-solid fa-dollar-sign" style="font-size: 15px; padding-left: 10px; padding-right: 10px;"></i>
+                <p>USD - U.S. Dollar</p>
+            </div>
+
+            <div class="iconen3">
+                <i class="fa-solid fa-flag-usa" style="font-size: 15px; padding-left: 10px; padding-right: 10px;"></i>
+                <p>United States</p>
+            </div>
+            
+        </div>
+
+    </footer>
+
+</body>
+</html>
